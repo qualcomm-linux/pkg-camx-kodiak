@@ -1,6 +1,6 @@
 # pkg-camx-kodiak
 
-This repository has debian packaging rules and scripts for [prebuilt CamX camera framework binaries](https://qartifactory-edge.qualcomm.com/ui/native/qsc_releases/software/chip/component/camx.qclinux.0.0/) for the talos platform.
+This repository has debian packaging rules and scripts for [prebuilt CamX camera framework binaries](https://qartifactory-edge.qualcomm.com/ui/native/qsc_releases/software/chip/component/camx.qclinux.0.0/) for the kodiak platform.
 
 ## Branches
 
