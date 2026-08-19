@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_shlibdeps:
+	dh_shlibdeps \
+		-l/usr/lib/aarch64-linux-gnu/camx/kodiak \
+		-l/usr/lib/aarch64-linux-gnu/camx/kodiak/hw \
+		-l/usr/lib/aarch64-linux-gnu/camx/kodiak/camera \
+		-l/usr/lib/aarch64-linux-gnu/camx/kodiak/camera/components
+
+maintainerclean:
+	rm -r \
+		LICENSE.qcom-2 \
+		camx-kodiak-dev/ \
+		camx-kodiak/ \
+		libcamx-dev/ \
+		libcamx-kodiak-dev/ \
+		libcamx-kodiak1/
+
+override_dh_strip:
+	# Don't strip DSP skel files
+	dh_strip --exclude=libbitml_nsp_v2_skel.so

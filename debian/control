@@ -1,0 +1,50 @@
+Source: camx-kodiak
+Section: non-free/libs
+Priority: optional
+Maintainer: Qualcomm Camera Team <camx.deb.maintainers@qti.qualcomm.com>
+Build-Depends:
+ debhelper-compat (= 13),
+Build-Depends-Arch:
+ qcom-sensing-hub,
+ libfastrpc1,
+ libglib2.0-0,
+ libxml2-16,
+ libprotobuf32t64,
+Standards-Version: 4.6.2
+Homepage: http://support.cdmatech.com
+Vcs-Browser: https://github.com/qualcomm-linux/pkg-camx-kodiak
+Vcs-Git: https://github.com/qualcomm-linux/pkg-camx-kodiak.git
+
+Package: camx-kodiak
+Architecture: arm64
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Recommends:
+ ocl-icd-libopencl1,
+ qcom-adreno-cl1,
+ libegl1,
+ libgles2,
+ qcom-sensing-hub,
+Description: Qualcomm CamX usermode libraries for Kodiak platform
+ Core camera driver components for Kodiak platform.
+
+Package: libcamx-kodiak1
+Architecture: arm64
+Depends:
+ camx-kodiak (= ${binary:Version}),
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: Qualcomm CamX libraries for camera service
+ Set of libraries used by camera service (QMMF) for Kodiak platform
+
+Package: libcamx-kodiak-dev
+Section: non-free/libdevel
+Architecture: arm64
+Depends:
+ camx-kodiak (= ${binary:Version}),
+ libcamx-kodiak1 (= ${binary:Version}),
+ ${misc:Depends},
+Description: Dev package for CamX libraries for camera service
+ Contains unversioned so files used by camera service (QMMF)
+ for Kodiak platform
