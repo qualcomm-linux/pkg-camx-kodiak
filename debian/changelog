@@ -1,0 +1,6 @@
+camx-kodiak (1.0.33-1) resolute; urgency=medium
+
+  [ Qualcomm Camera Team ]
+  * Initial debian packaging for the CamX kodiak prebuilts.
+
+ -- Qualcomm Camera Team <camx.deb.maintainers@qti.qualcomm.com>  Wed, 19 Aug 2026 11:32:02 +0000
