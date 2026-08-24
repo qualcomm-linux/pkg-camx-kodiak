@@ -25,7 +25,7 @@ Recommends:
  qcom-adreno-cl1,
  libegl1,
  libgles2,
- qcom-sensing-hub,
+ qcom-sensors-core,
 Description: Qualcomm CamX usermode libraries for Kodiak platform
  Core camera driver components for Kodiak platform.
 
