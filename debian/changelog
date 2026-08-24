@@ -1,9 +1,9 @@
-camx-kodiak (1.0.36-1) UNRELEASED; urgency=medium
+camx-kodiak (1.0.36-1) resolute; urgency=medium
 
   [ Qualcomm Camera Team ]
   * Add aarch64 triplet for external lib dlopens
 
- -- Qualcomm Camera Team <camx.deb.maintainers@qti.qualcomm.com>  Mon, 24 Aug 2026 06:45:35 +0000
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Mon, 24 Aug 2026 19:02:20 +0000
 
 camx-kodiak (1.0.33-1) resolute; urgency=medium
 
