@@ -10,6 +10,9 @@ Build-Depends-Arch:
  libglib2.0-0,
  libxml2-16,
  libprotobuf32t64,
+ ocl-icd-libopencl1,
+ libegl1,
+ libgles2,
 Standards-Version: 4.6.2
 Homepage: http://support.cdmatech.com
 Vcs-Browser: https://github.com/qualcomm-linux/pkg-camx-kodiak
@@ -21,10 +24,7 @@ Depends:
  ${misc:Depends},
  ${shlibs:Depends},
 Recommends:
- ocl-icd-libopencl1,
  qcom-adreno-cl1,
- libegl1,
- libgles2,
  qcom-sensors-core,
 Description: Qualcomm CamX usermode libraries for Kodiak platform
  Core camera driver components for Kodiak platform.
