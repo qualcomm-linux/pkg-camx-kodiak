@@ -1,8 +1,9 @@
-camx-kodiak (1.0.50-1) UNRELEASED; urgency=medium
+camx-kodiak (1.0.50-1) resolute; urgency=medium
 
+  [ Qualcomm Camera Team ]
   * New upstream release (261012.1)
 
- -- Qualcomm Camera Team <camx.deb.maintainers@qti.qualcomm.com>  Mon, 19 Oct 2026 10:05:38 +0530
+ -- GitHub Service Bot <githubservice@qti.qualcomm.com>  Thu, 22 Oct 2026 16:53:58 +0000
 
 camx-kodiak (1.0.47-1) resolute; urgency=medium
 
